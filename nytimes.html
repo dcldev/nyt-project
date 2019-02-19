@@ -1,36 +1,39 @@
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Document</title>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <link rel="stylesheet" href="nytimes.css">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="nytimes.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
 
-   <div class="container">
-       <h1>New York Times Search</h1>
-       <div class="row1">
-               <h3>Search Parameters</h3>
-               <div class="form-group">
-                       <label for="exampleDropdownFormEmail1">Search Term:</label>
-                       <input type="text" class="form-control" id="searchTerm" placeholder="">
-                     </div>
-                     <div class="form-group">
-                       <label for="exampleDropdownFormPassword1">Number of Records to Retrieve:</label>
-                       <input type="text" class="form-control" id="recordsRetrieve" placeholder="">
-                     </div>
-                     <div class="form-group">
-                           <label for="exampleDropdownFormPassword1"> Start Year:</label>
-                           <input type="text" class="form-control" id="startYear" placeholder="">
-                         </div>
-                         <div class="form-group">
-                               <label for="exampleDropdownFormPassword1"> End Year:</label>
-                               <input type="text" class="form-control" id="endYear" placeholder="">
-                             </div>
-       <!-- <h3>Search Parameters</h3>
+  <div class="container">
+    <h1>New York Times Search</h1>
+    <div class="row1">
+      <h3>Search Parameters</h3>
+      <div class="form-group">
+        <label for="exampleDropdownFormEmail1">Search Term:</label>
+        <input type="text" class="form-control" id="searchTerm" placeholder="">
+      </div>
+      <div class="form-group">
+        <label for="exampleDropdownFormPassword1">Number of Records to Retrieve:</label>
+        <input type="text" class="form-control" id="recordsRetrieve" placeholder="">
+      </div>
+      <div class="form-group">
+        <label for="exampleDropdownFormPassword1"> Start Year:</label>
+        <input type="text" class="form-control" id="startYear" placeholder="">
+      </div>
+      <div class="form-group">
+        <label for="exampleDropdownFormPassword1"> End Year:</label>
+        <input type="text" class="form-control" id="endYear" placeholder="">
+      </div>
+      <!-- <h3>Search Parameters</h3>
        <form>
            Search Term:<br>
            <input type="text" name="searchTerm"><br>
@@ -41,19 +44,29 @@
            End Year (Optional):<br>
            <input type="text" name="endYear"><br>
        </form> -->
-       <button id="search">
-           Search
-       </button>
-       <button id="clear">
-           Clear Results
-       </button>
-       </div>
-       <br>
-       <div class="row2">
-       <h3 id="topArticles">Top Articles</h3>
-       </div>
+      <button id="search">
+        Search
+      </button>
+      <button id="clear">
+        Clear Results
+      </button>
+    </div>
+    <br>
 
-   </div>
-   <script src="nytimes.js"></script>
+
+    <div class="row2">
+      <h3>Top Articles</h3>
+      <div class="articleLister">
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <script src="nytimes.js"></script>
 </body>
+
 </html>
+
+
